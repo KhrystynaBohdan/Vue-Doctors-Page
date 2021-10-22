@@ -1,26 +1,58 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HeaderBlock />
+  <CardsBlock />
+  <Clients />
+  <FAQBlock />
+  <PricingBlock />
+  <GetInTouchMobileBlock />
+  <GetInTouchDesktop />
+  <Footer />
+  <Copyright />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HeaderBlock from "@/components/HeaderBlock/HeaderBlock";
+import CardsBlock from "@/components/CardsBlock/CardsBlock";
+import Clients from "@/components/ClientsBlock/Clients";
+import FAQBlock from "@/components/FAQBlock/FAQBlock";
+import PricingBlock from "@/components/PricingBlock/PricingBlock";
+import GetInTouchMobileBlock from "@/components/GetInTouchMobileBlock";
+import GetInTouchDesktop from "@/components/GetInTouchDesktop";
+import Footer from "@/components/Footer";
+import Copyright from "@/components/Copyright";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Copyright,
+    Footer,
+    GetInTouchDesktop,
+    GetInTouchMobileBlock,
+    PricingBlock,
+    FAQBlock,
+    Clients,
+    CardsBlock,
+    HeaderBlock,
   },
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./styles/variables";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  background: $white;
+}
+
+.footer__icon,
+a,
+button,
+select,
+input {
+  &:focus-visible {
+    outline: 2px solid #cccaca;
+    border-radius: 2px;
+  }
 }
 </style>
