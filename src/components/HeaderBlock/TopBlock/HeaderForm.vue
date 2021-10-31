@@ -7,7 +7,8 @@
       autocomplete="on"
       class="top-block__input"
       placeholder="Full Name"
-      v-model="name" required
+      v-model="name"
+      required
     />
     <label>Email *</label>
     <input
@@ -15,10 +16,16 @@
       autocomplete="on"
       class="top-block__input"
       placeholder="example@gmail.com"
-      v-model="email" required
+      v-model="email"
+      required
     />
     <label>Department *</label>
-    <select class="top-block__select" tabindex="0" v-model="department" required>
+    <select
+      class="top-block__select"
+      tabindex="0"
+      v-model="department"
+      required
+    >
       <option value="select">Please Select</option>
       <option value="surgery">Surgery</option>
       <option value="pediatric">Pediatric</option>
@@ -38,25 +45,25 @@ export default {
   data() {
     return {
       email: "",
-      name: '',
-      department: 'surgery',
-      time: 'time1'
+      name: "",
+      department: "surgery",
+      time: "time1",
     };
   },
   methods: {
-    handleSubmit(){
-      console.log('name: ', this.name)
-      console.log('email: ', this.email)
-      console.log('department: ', this.department)
-      console.log('time: ', this.time)
+    handleSubmit() {
+      console.log("name: ", this.name);
+      console.log("email: ", this.email);
+      console.log("department: ", this.department);
+      console.log("time: ", this.time);
 
-      this.name = ''
-      this.email = ''
-      this.department = ''
-      this.time = ''
-    }
-  }
-  }
+      this.name = "";
+      this.email = "";
+      this.department = "";
+      this.time = "";
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">

@@ -73,10 +73,10 @@
         </div>
       </div>
       <div class="header__options">
-        <div class="header__option"><a href="#">Home</a></div>
-        <div class="header__option"><a href="#">Product</a></div>
-        <div class="header__option"><a href="#">Pricing</a></div>
-        <div class="header__option"><a href="#">Contact</a></div>
+        <div class="header__option"><router-link to="/home">Home</router-link></div>
+        <div class="header__option"><router-link to="/product">Product</router-link></div>
+        <div class="header__option"><router-link to="/pricing">Pricing</router-link></div>
+        <div class="header__option"><router-link to="/contact">Contact</router-link></div>
       </div>
       <button class="header__button button-primary">
         Get Quote Now
